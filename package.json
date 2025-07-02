@@ -4,14 +4,13 @@
   "description": "tranquiLOG – The calmest way to manage your Scrum backlog",
   "private": true,
   "scripts": {
+    "postinstall": "cd backend && npm install && cd ../frontend && npm install",
+    "start": "concurrently \"npm run backend:dev\" \"npm run frontend:dev\"",
     "dev": "concurrently \"npm run backend:dev\" \"npm run frontend:dev\"",
     "backend:dev": "cd backend && npm run dev",
     "frontend:dev": "cd frontend && npm run dev",
-    "backend:install": "cd backend && npm install",
-    "frontend:install": "cd frontend && npm install",
-    "install:all": "npm run backend:install && npm run frontend:install",
     "build": "cd frontend && npm run build",
-    "start": "cd backend && npm start"
+    "backend:build": "cd backend && npm run build"
   },
   "devDependencies": {
     "concurrently": "^8.2.2"

@@ -19,28 +19,25 @@ Ein funktionsfähiger Prototyp eines Backlog-Tools für Scrum-Teams mit ruhigem 
 
 ## Installation & Start
 
-### Alle Dependencies installieren
+### Schnellstart (alles in 2 Befehlen)
 ```bash
-npm install
-npm run install:all
-```
-
-### Entwicklungsserver starten
-```bash
-npm run dev
+npm install    # Installiert automatisch alle Dependencies (Root + Backend + Frontend)
+npm start      # Startet Frontend + Backend gleichzeitig
 ```
 
 Dies startet gleichzeitig:
 - Backend Server auf Port 3001
 - Frontend Development Server auf Port 5173
 
-### Einzeln starten
+### Alternative Befehle
 ```bash
-# Nur Backend
-npm run backend:dev
+npm run dev           # Gleich wie npm start
+npm run build         # Frontend Production Build
+npm run backend:build # Backend Production Build
 
-# Nur Frontend  
-npm run frontend:dev
+# Einzeln starten (für Debugging)
+npm run backend:dev   # Nur Backend
+npm run frontend:dev  # Nur Frontend  
 ```
 
 ## Funktionen

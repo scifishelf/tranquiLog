@@ -1,6 +1,6 @@
 # tranquiLog Documentation
 
-*AI-optimized documentation - Last updated: 02. Juli 2025*
+*AI-optimized documentation - Last updated: 02. Juli 2025 - Scripts vereinfacht*
 
 ## 📚 Documentation Index
 
@@ -13,6 +13,11 @@
 - **[Development](./development.md)** - Setup, scripts, and development workflow
 
 ## 🎯 Quick References
+
+### Quick Start
+```bash
+npm install && npm start
+```
 
 ### Ports
 - Frontend: `5173`

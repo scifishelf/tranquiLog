@@ -1,21 +1,23 @@
 # Development Setup
 
-*Last updated: 02. Juli 2025*
+*Last updated: 02. Juli 2025 - Scripts vereinfacht*
 
 ## Quick Start
 ```bash
-npm install
-npm run install:all
-npm run dev
+npm install    # Installs everything automatically via postinstall hook
+npm start      # Starts both frontend + backend
 ```
 
 ## Scripts
 
-### Root Level
-- `npm run dev` - Start both frontend + backend
-- `npm run install:all` - Install all dependencies
-- `npm run backend:install` - Install backend deps only
-- `npm run frontend:install` - Install frontend deps only
+### Root Level (Simplified)
+- `npm install` - **Installs ALL dependencies automatically** (Root + Backend + Frontend)
+- `npm start` - **Start both frontend + backend** (main command)
+- `npm run dev` - Start both frontend + backend (alias for npm start)
+- `npm run build` - Build frontend for production
+- `npm run backend:build` - Build backend for production
+
+### Individual Services (For Debugging)
 - `npm run backend:dev` - Start backend only
 - `npm run frontend:dev` - Start frontend only
 
